@@ -15,11 +15,11 @@ Offers can be delivered via multiple channels: Email, Mobile, Social, Web
 
 # Table of Contents
 
-1. [Installation](https://github.com/UOIKENNA/StackOverflow_developers_survey#Installation)
-2. [Project Motivation](https://github.com/UOIKENNA/StackOverflow_developers_survey#Project)
-3. [File Descriptions](https://github.com/UOIKENNA/StackOverflow_developers_survey#File)
-4. [Results](https://github.com/UOIKENNA/StackOverflow_developers_survey#results)
-5. [Licensing, Authors and Acknowledgements](https://github.com/UOIKENNA/StackOverflow_developers_survey#licensing)
+1. [Installation](https://github.com/UOIKENNA/Starbucks-Capstone-Projectt#Installation)
+2. [Project Motivation](https://github.com/UOIKENNA/Starbucks-Capstone-Project#Project)
+3. [File Descriptions](https://github.com/UOIKENNA/Starbucks-Capstone-Project#File)
+4. [Results](https://github.com/UOIKENNA/Starbucks-Capstone-Project#results)
+5. [Licensing, Authors and Acknowledgements](https://github.com/UOIKENNA/Starbucks-Capstone-Project#licensing)
 
 # Installation
 The code should run without issues using Python 3.*. All the necessary libraries were imported using the Anaconda distribution.
@@ -38,11 +38,25 @@ d) Which individual attributes contributed the most during the offer window?
 
 # File Descriptions
 
-There is one jupyter notebook available here to showcase the work related to the above questions. Markdown cells were used to assist in explaining the individual steps.
+portfolio.json
+
+id (string) - offer id offer_type (string) - type of offer ie BOGO, discount, informational difficulty (int) - minimum required spend to complete an offer reward (int) - reward given for completing an offer duration (int) - time for offer to be open, in days channels (list of strings)
+
+profile.json
+
+age (int) - age of the customer became_member_on (int) - date when customer created an app account gender (str) - gender of the customer (note some entries contain 'O' for other rather than M or F) id (str) - customer id income (float) - customer's income
+
+transcript.json
+
+event (str) - record description (ie transaction, offer received, offer viewed, etc.) person (str) - customer id time (int) - time in hours since start of test. The data begins at time t=0 value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+Starbucks Capstone Project.ipynb
+
+contains all the code and analysis performed in the project
 
 # Results
-The results of this analysis are available on a medium post [here](https://uikenna97.medium.com/a-survey-on-developers-in-nigeria-f7f1380f61ff)
+The results of this analysis are available on a medium post [here](https://uikenna97.medium.com/udacity-capstone-project-starbucks-66a4bb1a186f)
 
 # Licensing, Authors and Acknowledgements
 
-Credit to Stack Overflow for the data I used. I also credit https://github.com/iris-theof/developers_survey for providing me with guidance to perform this project. The code in this repository can be viewed and inputs will be welcome!.
+Credit to Udacity for the lessons and tools provided. I also credit https://github.com/MANOJPATRA1991 for providing me with guidance to perform this project. The code in this repository can be viewed and inputs will be welcome!.
